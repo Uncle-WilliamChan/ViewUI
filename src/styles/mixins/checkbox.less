@@ -2,7 +2,7 @@
     @checkbox-inner-prefix-cls: ~"@{checkbox-prefix-cls}-inner";
 
     .@{checkbox-prefix-cls}-focus {
-        box-shadow: 0 0 0 2px fade(@primary-color, 20%);
+        box-shadow: 0 0 0 2px ~'var(--@{css-prefix}fade-primary-20)';
         z-index: 1;
     }
 
@@ -112,7 +112,7 @@
     }
 
     .@{checkbox-prefix-cls}-wrapper-checked.@{checkbox-prefix-cls}-border{
-        border-color: @primary-color;
+        border-color: ~'var(--@{css-prefix}primary-color)';
     }
     .@{checkbox-prefix-cls}-wrapper-disabled.@{checkbox-prefix-cls}-border{
         border-color: @btn-disable-border;
@@ -123,13 +123,13 @@
 
         &:hover {
             .@{checkbox-inner-prefix-cls} {
-                border-color: @primary-color;
+                border-color: ~'var(--@{css-prefix}primary-color)';
             }
         }
 
         .@{checkbox-inner-prefix-cls} {
-            border-color: @primary-color;
-            background-color: @primary-color;
+            border-color: ~'var(--@{css-prefix}primary-color)';
+            background-color: ~'var(--@{css-prefix}primary-color)';
 
             &:after {
                 content: '';
@@ -227,12 +227,12 @@
 
         &:hover {
             .@{checkbox-inner-prefix-cls} {
-                border-color: @primary-color;
+                border-color: ~'var(--@{css-prefix}primary-color)';
             }
         }
         .@{checkbox-inner-prefix-cls}{
-            background-color: @primary-color;
-            border-color: @primary-color;
+            background-color: ~'var(--@{css-prefix}primary-color)';
+            border-color: ~'var(--@{css-prefix}primary-color)';
         }
         &.@{checkbox-prefix-cls}-disabled{
             .@{checkbox-inner-prefix-cls}{

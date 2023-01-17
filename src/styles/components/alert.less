@@ -30,36 +30,36 @@
     }
 
     &-success {
-        border: @border-width-base @border-style-base ~`colorPalette("@{success-color}", 3)`;
+        border: @border-width-base @border-style-base ~'var(--@{css-prefix}success-3)';
         //background-color: tint(@success-color, 90%);
-        background-color: ~`colorPalette("@{success-color}", 1)`;
+        background-color: ~'var(--@{css-prefix}success-1)';
         .@{alert-prefix-cls}-icon {
             color: @success-color;
         }
     }
 
     &-info {
-        border: @border-width-base @border-style-base ~`colorPalette("@{primary-color}", 3)`;
-        //background-color: tint(@primary-color, 90%);
-        background-color: ~`colorPalette("@{primary-color}", 1)`;
+        border: @border-width-base @border-style-base ~'var(--@{css-prefix}primary-3)';
+        //background-color: ~'var(--@{css-prefix}tint-primary-90)';
+        background-color: ~'var(--@{css-prefix}primary-1)';
         .@{alert-prefix-cls}-icon {
-            color: @primary-color;
+            color: ~'var(--@{css-prefix}primary-color)';
         }
     }
 
     &-warning {
-        border: @border-width-base @border-style-base ~`colorPalette("@{warning-color}", 3)`;
+        border: @border-width-base @border-style-base ~'var(--@{css-prefix}warning-3)';
         //background-color: tint(@warning-color, 90%);
-        background-color: ~`colorPalette("@{warning-color}", 1)`;
+        background-color: ~'var(--@{css-prefix}warning-1)';
         .@{alert-prefix-cls}-icon {
             color: @warning-color;
         }
     }
 
     &-error {
-        border: @border-width-base @border-style-base ~`colorPalette("@{error-color}", 3)`;
+        border: @border-width-base @border-style-base ~'var(--@{css-prefix}error-3)';
         //background-color: tint(@error-color, 90%);
-        background-color: ~`colorPalette("@{error-color}", 1)`;
+        background-color: ~'var(--@{css-prefix}error-1)';
         .@{alert-prefix-cls}-icon {
             color: @error-color;
         }

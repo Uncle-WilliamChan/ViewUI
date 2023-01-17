@@ -38,17 +38,17 @@
         }
 
         &:hover {
-            border-color: @primary-color;
+            border-color: ~'var(--@{css-prefix}primary-color)';
             a {
-                color: @primary-color;
+                color: ~'var(--@{css-prefix}primary-color)';
             }
         }
 
         &-active {
-            border-color: @primary-color;
+            border-color: ~'var(--@{css-prefix}primary-color)';
 
             a, &:hover a {
-                color: @primary-color;
+                color: ~'var(--@{css-prefix}primary-color)';
             }
         }
     }
@@ -97,7 +97,7 @@
             //}
             i:first-child{
                 display: inline;
-                color: @primary-color;
+                color: ~'var(--@{css-prefix}primary-color)';
             }
             i:last-child{
                 display: none;
@@ -181,10 +181,10 @@
         }
 
         &:hover {
-            border-color: @primary-color;
+            border-color: ~'var(--@{css-prefix}primary-color)';
 
             a {
-                color: @primary-color;
+                color: ~'var(--@{css-prefix}primary-color)';
             }
         }
     }
@@ -268,7 +268,7 @@
             transition: border-color @transition-time @ease-in-out;
 
             &:hover {
-                border-color: @primary-color;
+                border-color: ~'var(--@{css-prefix}primary-color)';
             }
         }
 

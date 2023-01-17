@@ -61,8 +61,8 @@
         left: 3px;
         top: 3px;
         z-index: 1;
-        border: 1px solid @primary-color;
-        border-color: transparent transparent transparent @primary-color;
+        border: 1px solid ~'var(--@{css-prefix}primary-color)';
+        border-color: transparent transparent transparent ~'var(--@{css-prefix}primary-color)';
         animation: switch-loading 1s linear;
         animation-iteration-count: infinite;
     }
@@ -71,7 +71,7 @@
     }
 
     &:not(&-disabled):focus {
-        box-shadow: 0 0 0 2px fade(@primary-color, 20%);
+        box-shadow: 0 0 0 2px ~'var(--@{css-prefix}fade-primary-20)';
         outline: 0;
     }
 
@@ -132,8 +132,8 @@
     }
 
     &-checked {
-        border-color: @primary-color;
-        background-color: @primary-color;
+        border-color: ~'var(--@{css-prefix}primary-color)';
+        background-color: ~'var(--@{css-prefix}primary-color)';
 
         .@{switch-prefix-cls}-inner {
             left: 7px;
@@ -166,8 +166,8 @@
     }
 
     &-disabled&-checked{
-        border-color: @primary-color;
-        background-color: @primary-color;
+        border-color: ~'var(--@{css-prefix}primary-color)';
+        background-color: ~'var(--@{css-prefix}primary-color)';
         opacity: .4;
 
         &:after {

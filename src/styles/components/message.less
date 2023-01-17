@@ -66,7 +66,7 @@
 
     &-info .@{icon-prefix-cls},
     &-loading .@{icon-prefix-cls} {
-        color: @primary-color;
+        color: ~'var(--@{css-prefix}primary-color)';
     }
 
     .@{icon-prefix-cls} {
@@ -86,24 +86,24 @@
                 box-shadow: none;
             }
             &-info{
-                background: ~`colorPalette("@{primary-color}", 1)`;
-                color: ~`colorPalette("@{primary-color}", 6)`;
-                border: 1px solid ~`colorPalette("@{primary-color}", 2)`;
+                background: ~'var(--@{css-prefix}primary-1)';
+                color: ~'var(--@{css-prefix}primary-6)';
+                border: 1px solid ~'var(--@{css-prefix}primary-2)';
             }
             &-success{
-                background: ~`colorPalette("@{success-color}", 1)`;
-                color: ~`colorPalette("@{success-color}", 6)`;
-                border: 1px solid ~`colorPalette("@{success-color}", 2)`;
+                background: ~'var(--@{css-prefix}success-1)';
+                color: ~'var(--@{css-prefix}success-6)';
+                border: 1px solid ~'var(--@{css-prefix}success-2)';
             }
             &-warning{
-                background: ~`colorPalette("@{warning-color}", 1)`;
-                color: ~`colorPalette("@{warning-color}", 6)`;
-                border: 1px solid ~`colorPalette("@{warning-color}", 2)`;
+                background: ~'var(--@{css-prefix}warning-1)';
+                color: ~'var(--@{css-prefix}warning-6)';
+                border: 1px solid ~'var(--@{css-prefix}warning-2)';
             }
             &-error{
-                background: ~`colorPalette("@{error-color}", 1)`;
-                color: ~`colorPalette("@{error-color}", 6)`;
-                border: 1px solid ~`colorPalette("@{error-color}", 2)`;
+                background: ~'var(--@{css-prefix}error-1)';
+                color: ~'var(--@{css-prefix}error-6)';
+                border: 1px solid ~'var(--@{css-prefix}error-2)';
             }
         }
     }

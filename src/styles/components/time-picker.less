@@ -67,11 +67,11 @@
                 }
             }
             &-selected ,&-selected:hover{
-                color: @primary-color;
+                color: ~'var(--@{css-prefix}primary-color)';
                 background: @background-color-select-hover;
             }
             &-focused{
-                background-color: tint(@primary-color, 80%);
+                background-color: ~'var(--@{css-prefix}tint-primary-80)';
             }
         }
     }

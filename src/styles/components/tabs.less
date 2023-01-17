@@ -14,7 +14,7 @@
     &-ink-bar {
         height: 2px;
         box-sizing: border-box;
-        background-color: @primary-color;
+        background-color: ~'var(--@{css-prefix}primary-color)';
         position: absolute;
         left: 0;
         bottom: 1px;
@@ -144,7 +144,7 @@
         }
 
         .@{tabs-prefix-cls}-tab-active {
-            color: @primary-color;
+            color: ~'var(--@{css-prefix}primary-color)';
         }
     }
     &-mini &-nav-container {
@@ -203,7 +203,7 @@
         background: #fff;
         transform: translateZ(0);
         border-color: @border-color-base;
-        color: @primary-color;
+        color: ~'var(--@{css-prefix}primary-color)';
     }
     &&-card > &-bar &-nav-wrap {
         margin-bottom: 0;

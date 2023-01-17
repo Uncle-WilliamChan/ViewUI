@@ -1,21 +1,99 @@
 @import "color/colors";
 
+:root {
+    --@{css-prefix}primary-color          : @base-color;
+    --@{css-prefix}processing-color       : ~'var(--@{css-prefix}primary-color)';
+    --@{css-prefix}primary-color          : ~'var(--@{css-prefix}primary-color)';
+    --@{css-prefix}info-color             : @base-info-color;
+    --@{css-prefix}success-color          : @base-success-color;
+    --@{css-prefix}warning-color          : @base-warning-color;
+    --@{css-prefix}error-color            : @base-error-color;
+    --@{css-prefix}normal-color           : #e6ebf1;
+    --@{css-prefix}link-color             : ~'var(--@{css-prefix}primary-color)';
+    --@{css-prefix}link-hover-color       : tint(@base-color, 20%);
+    --@{css-prefix}link-active-color      : shade(@base-color, 5%);
+    --@{css-prefix}selected-color         : fade(@base-color, 90%);
+    --@{css-prefix}tooltip-color          : #fff;
+    --@{css-prefix}subsidiary-color       : #808695;
+    --@{css-prefix}rate-star-color        : #f5a623;
+    --@{css-prefix}border-color-base      : @base-border-color;
+
+    --@{css-prefix}primary-1              : ~`colorPalette("@{base-color}", 1)`;
+    --@{css-prefix}primary-2              : ~`colorPalette("@{base-color}", 2)`;
+    --@{css-prefix}primary-3              : ~`colorPalette("@{base-color}", 3)`;
+    --@{css-prefix}primary-4              : ~`colorPalette("@{base-color}", 4)`;
+    --@{css-prefix}primary-5              : ~`colorPalette("@{base-color}", 5)`;
+    --@{css-prefix}primary-6              : @base-color;
+    --@{css-prefix}primary-7              : ~`colorPalette("@{base-color}", 7)`;
+    --@{css-prefix}primary-8              : ~`colorPalette("@{base-color}", 8)`;
+    --@{css-prefix}primary-9              : ~`colorPalette("@{base-color}", 9)`;
+
+    --@{css-prefix}success-1              : ~`colorPalette("@{base-success-color}", 1)`;
+    --@{css-prefix}success-2              : ~`colorPalette("@{base-success-color}", 2)`;
+    --@{css-prefix}success-3              : ~`colorPalette("@{base-success-color}", 3)`;
+    --@{css-prefix}success-4              : ~`colorPalette("@{base-success-color}", 4)`;
+    --@{css-prefix}success-5              : ~`colorPalette("@{base-success-color}", 5)`;
+    --@{css-prefix}success-6              : @base-success-color;
+    --@{css-prefix}success-7              : ~`colorPalette("@{base-success-color}", 7)`;
+    --@{css-prefix}success-8              : ~`colorPalette("@{base-success-color}", 8)`;
+    --@{css-prefix}success-9              : ~`colorPalette("@{base-success-color}", 9)`;
+
+    --@{css-prefix}warning-1              : ~`colorPalette("@{base-warning-color}", 1)`;
+    --@{css-prefix}warning-2              : ~`colorPalette("@{base-warning-color}", 2)`;
+    --@{css-prefix}warning-3              : ~`colorPalette("@{base-warning-color}", 3)`;
+    --@{css-prefix}warning-4              : ~`colorPalette("@{base-warning-color}", 4)`;
+    --@{css-prefix}warning-5              : ~`colorPalette("@{base-warning-color}", 5)`;
+    --@{css-prefix}warning-6              : @base-warning-color;
+    --@{css-prefix}warning-7              : ~`colorPalette("@{base-warning-color}", 7)`;
+    --@{css-prefix}warning-8              : ~`colorPalette("@{base-warning-color}", 8)`;
+    --@{css-prefix}warning-9              : ~`colorPalette("@{base-warning-color}", 9)`;
+
+    --@{css-prefix}error-1                : ~`colorPalette("@{base-error-color}", 1)`;
+    --@{css-prefix}error-2                : ~`colorPalette("@{base-error-color}", 2)`;
+    --@{css-prefix}error-3                : ~`colorPalette("@{base-error-color}", 3)`;
+    --@{css-prefix}error-4                : ~`colorPalette("@{base-error-color}", 4)`;
+    --@{css-prefix}error-5                : ~`colorPalette("@{base-error-color}", 5)`;
+    --@{css-prefix}error-6                : @base-error-color;
+    --@{css-prefix}error-7                : ~`colorPalette("@{base-error-color}", 7)`;
+    --@{css-prefix}error-8                : ~`colorPalette("@{base-error-color}", 8)`;
+    --@{css-prefix}error-9                : ~`colorPalette("@{base-error-color}", 9)`;
+
+    --@{css-prefix}fade-primary-20        : fade(@base-color, 20%);
+
+    --@{css-prefix}shade-primary-5        : shade(@base-color, 5%);
+
+    --@{css-prefix}tint-primary-20        : tint(@base-color, 20%);
+    --@{css-prefix}tint-primary-80        : tint(@base-color, 80%);
+    --@{css-prefix}tint-primary-90        : tint(@base-color, 90%);
+    --@{css-prefix}tint-primary-95        : tint(@base-color, 95%);
+
+    --@{css-prefix}tint-border-base-20    : tint(@base-border-color, 20%);
+}
+
 // Prefix
 @css-prefix             : ivu-;
 @css-prefix-iconfont    : ivu-icon;
 
+// Base
+@base-color             : #2d8cf0;
+@base-success-color     : #19be6b;
+@base-warning-color     : #ff9900;
+@base-error-color       : #ed4014;
+@base-info-color        : #2db7f5;
+@base-border-color      : #dcdee2;  // outside
+
 // Color
-@primary-color          : #2d8cf0;
-@info-color             : #2db7f5;
-@success-color          : #19be6b;
-@processing-color       : @primary-color;
-@warning-color          : #ff9900;
-@error-color            : #ed4014;
+@primary-color          : ~'var(--@{css-prefix}primary-color)';
+@info-color             : ~'var(--@{css-prefix}info-color)';
+@success-color          : ~'var(--@{css-prefix}success-color)';
+@processing-color       : ~'var(--@{css-prefix}processing-color)';
+@warning-color          : ~'var(--@{css-prefix}warning-color)';
+@error-color            : ~'var(--@{css-prefix}error-color)';
 @normal-color           : #e6ebf1;
-@link-color             : #2D8cF0;
+@link-color             : @base-color;
 @link-hover-color       : tint(@link-color, 20%);
 @link-active-color      : shade(@link-color, 5%);
-@selected-color         : fade(@primary-color, 90%);
+@selected-color         : fade(@base-color, 90%);
 @tooltip-color          : #fff;
 @subsidiary-color       : #808695;
 @rate-star-color        : #f5a623;
@@ -48,7 +126,7 @@
 @padding-xs: 8px; // small items
 
 // Border color
-@border-color-base      : #dcdee2;  // outside
+@border-color-base      : ~'var(--@{css-prefix}border-color-base)';  // outside
 @border-color-split     : #e8eaec;  // inside
 @border-width-base      : 1px;            // width of the border for a component
 @border-style-base      : solid;          // style of a components border
@@ -95,7 +173,7 @@
 @btn-font-size-small    : @font-size-base;
 @btn-border-radius      : 4px;
 @btn-border-radius-small: 3px;
-@btn-group-border       : shade(@primary-color, 5%);
+@btn-group-border       : ~'var(--@{css-prefix}shade-primary-5)';
 
 @btn-disable-color      : #c5c8ce;
 @btn-disable-bg         : @background-color-base;
@@ -213,7 +291,7 @@
 @ease-in-out            : ease-in-out;
 
 // Slider
-@slider-color              : tint(@primary-color, 20%);
+@slider-color              : ~'var(--@{css-prefix}tint-primary-20)';
 @slider-height             : 4px;
 @slider-margin             : 16px 0;
 @slider-button-wrap-size   : 18px;

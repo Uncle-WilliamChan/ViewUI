@@ -268,8 +268,8 @@
             }
 
             &:hover {
-                color: @primary-color;
-                border-color: @primary-color;
+                color: ~'var(--@{css-prefix}primary-color)';
+                border-color: ~'var(--@{css-prefix}primary-color)';
             }
             &-empty:hover{
                 color: transparent;
@@ -477,7 +477,7 @@
                 color: inherit;
             }
             &.on{
-                color: @primary-color;
+                color: ~'var(--@{css-prefix}primary-color)';
             }
         }
         &-list{

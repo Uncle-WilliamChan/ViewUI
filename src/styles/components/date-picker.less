@@ -51,7 +51,7 @@
         }
         &-focused{
             em{
-                box-shadow: 0 0 0 1px @primary-color inset;
+                box-shadow: 0 0 0 1px ~'var(--@{css-prefix}primary-color)' inset;
             }
         }
 
@@ -91,7 +91,7 @@
                         width: 6px;
                         height: 6px;
                         border-radius: 50%;
-                        background: @primary-color;
+                        background: ~'var(--@{css-prefix}primary-color)';
                         position: absolute;
                         top: 1px;
                         right: 1px;
@@ -120,7 +120,7 @@
             &-selected,&-selected:hover
             {
                 em{
-                    background: @primary-color;
+                    background: ~'var(--@{css-prefix}primary-color)';
                     color: #fff;
                 }
             }
@@ -162,7 +162,7 @@
         }
 
         .@{date-picker-prefix-cls}-cells-cell-focused{
-            background-color: tint(@primary-color, 80%);
+            background-color: ~'var(--@{css-prefix}tint-primary-80)';
         }
 
     }
@@ -176,12 +176,12 @@
             cursor: pointer;
             transition: color @transition-time @ease-in-out;
             &:hover{
-                color: @primary-color;
+                color: ~'var(--@{css-prefix}primary-color)';
             }
         }
     }
     &-btn-pulse{
-        background-color: tint(@primary-color, 80%) !important;
+        background-color: ~'var(--@{css-prefix}tint-primary-80)' !important;
         border-radius: @border-radius-small;
         transition: background-color @transition-time @ease-in-out;
     }
@@ -253,7 +253,7 @@
             color: @btn-disable-color;
             transition: color @transition-time @ease-in-out;
             &:hover{
-                color: @primary-color;
+                color: ~'var(--@{css-prefix}primary-color)';
             }
             i{
                 font-size: 14px;

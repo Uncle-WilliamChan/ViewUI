@@ -106,9 +106,9 @@
     &-search{
         cursor: pointer;
         padding: 0 16px !important;
-        background: @primary-color !important;
+        background: ~'var(--@{css-prefix}primary-color)' !important;
         color: #fff !important;
-        border-color: @primary-color !important;
+        border-color: ~'var(--@{css-prefix}primary-color)' !important;
         transition: all @transition-time @ease-in-out;
         position: relative;
         z-index: 2;
@@ -118,12 +118,12 @@
         }
 
         &:hover{
-            background: tint(@primary-color, 20%) !important;
-            border-color: tint(@primary-color, 20%) !important;
+            background: ~'var(--@{css-prefix}tint-primary-20)' !important;
+            border-color: ~'var(--@{css-prefix}tint-primary-20)' !important;
         }
         &:active{
-            background: shade(@primary-color, 5%) !important;
-            border-color: shade(@primary-color, 5%) !important;
+            background: ~'var(--@{css-prefix}shade-primary-5)' !important;
+            border-color: ~'var(--@{css-prefix}shade-primary-5)' !important;
         }
 
         &-icon{
@@ -160,7 +160,7 @@
     &-with-search{
         &:hover{
             .@{input-prefix-cls} {
-                border-color: tint(@primary-color, 20%);
+                border-color: ~'var(--@{css-prefix}tint-primary-20)';
             }
         }
     }

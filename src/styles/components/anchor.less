@@ -31,7 +31,7 @@
                 width: 8px;
                 height: 8px;
                 border-radius: 50%;
-                border: 2px solid @primary-color;
+                border: 2px solid ~'var(--@{css-prefix}primary-color)';
                 background-color: @body-background;
                 left: 50%;
                 transition: top @transition-time @ease-in-out;
@@ -63,7 +63,7 @@
         }
 
         &-active > &-title {
-            color: @primary-color;
+            color: ~'var(--@{css-prefix}primary-color)';
         }
     }
 

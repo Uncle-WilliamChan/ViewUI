@@ -8,7 +8,7 @@
         color: @text-color;
         transition: color @transition-time @ease-in-out;
         &:hover {
-            color: tint(@primary-color, 20%);
+            color: ~'var(--@{css-prefix}tint-primary-20)';
         }
     }
 

@@ -1,14 +1,11 @@
-.hover(@color: @input-hover-border-color) {
-    border-color: tint(@color, 20%);
-}
 .hover-error() {
     border-color: @error-color;
 }
 
-.active(@color: @input-hover-border-color) {
-    border-color: tint(@color, 20%);
+.active(@color: primary-20) {
+    border-color: ~'var(--@{css-prefix}tint-@{color})';
     outline: 0;
-    box-shadow: 0 0 0 2px fade(@color, 20%);
+    box-shadow: 0 0 0 2px ~'var(--@{css-prefix}fade-@{color})';
 }
 .active-error() {
     border-color: @error-color;
@@ -22,7 +19,7 @@
     cursor: @cursor-disabled;
     color: #ccc;
     &:hover {
-        .hover(@input-border-color);
+        border-color: ~'var(--@{css-prefix}tint-border-base-20)';
     }
 }
 
@@ -56,7 +53,7 @@
     transition: border @transition-time @ease-in-out, background @transition-time @ease-in-out, box-shadow @transition-time @ease-in-out;
 
     &:hover {
-        .hover();
+        border-color: ~'var(--@{css-prefix}tint-primary-20)';
     }
 
     &:focus {

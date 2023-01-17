@@ -240,18 +240,18 @@
     &:hover
     //&:focus
     {
-        .button-color(tint(@primary-color, 20%); white; tint(@primary-color, 20%));
+        .button-color(~'var(--@{css-prefix}tint-primary-20)'; white; ~'var(--@{css-prefix}tint-primary-20)');
     }
     &:active,
     &.active {
-        .button-color(shade(@primary-color, 5%); white; shade(@primary-color, 5%));
+        .button-color(~'var(--@{css-prefix}shade-primary-5)'; white; ~'var(--@{css-prefix}shade-primary-5)');
     }
-    .active-btn-color(@primary-color);
+    .active-btn-color(~'var(--@{css-prefix}primary-color)');
 }
 
 // Primary
 .btn-primary() {
-    .button-variant(@btn-primary-color; @btn-primary-bg; @primary-color);
+    .button-variant(@btn-primary-color; @btn-primary-bg; ~'var(--@{css-prefix}primary-color)');
 
     &:hover,
     //&:focus,
@@ -259,7 +259,7 @@
     &.active {
         color: @btn-primary-color;
     }
-    .active-btn-color(@primary-color);
+    .active-btn-color(~'var(--@{css-prefix}primary-color)');
 }
 
 // Ghost
@@ -269,13 +269,13 @@
     &:hover
     //&:focus
     {
-        .button-color(tint(@primary-color, 20%); @btn-ghost-bg; tint(@primary-color, 20%));
+        .button-color(~'var(--@{css-prefix}tint-primary-20)'; @btn-ghost-bg; ~'var(--@{css-prefix}tint-primary-20)');
     }
     &:active,
     &.active {
-        .button-color(shade(@primary-color, 5%); @btn-ghost-bg; shade(@primary-color, 5%));
+        .button-color(~'var(--@{css-prefix}shade-primary-5)'; @btn-ghost-bg; ~'var(--@{css-prefix}shade-primary-5)');
     }
-    .active-btn-color(@primary-color);
+    .active-btn-color(~'var(--@{css-prefix}primary-color)');
 }
 
 // Dashed
@@ -286,13 +286,13 @@
     &:hover
     //&:focus
     {
-        .button-color(tint(@primary-color, 20%); @btn-ghost-bg; tint(@primary-color, 20%));
+        .button-color(~'var(--@{css-prefix}tint-primary-20)'; @btn-ghost-bg; ~'var(--@{css-prefix}tint-primary-20)');
     }
     &:active,
     &.active {
-        .button-color(shade(@primary-color, 5%); @btn-ghost-bg; shade(@primary-color, 5%));
+        .button-color(~'var(--@{css-prefix}shade-primary-5)'; @btn-ghost-bg; ~'var(--@{css-prefix}shade-primary-5)');
     }
-    .active-btn-color(@primary-color);
+    .active-btn-color(~'var(--@{css-prefix}primary-color)');
 }
 
 // Text
@@ -315,13 +315,13 @@
     &:hover
         //&:focus
     {
-        .button-color(tint(@primary-color, 20%); @btn-ghost-bg; transparent);
+        .button-color(~'var(--@{css-prefix}tint-primary-20)'; @btn-ghost-bg; transparent);
     }
     &:active,
     &.active {
-        .button-color(shade(@primary-color, 5%); @btn-ghost-bg; transparent);
+        .button-color(~'var(--@{css-prefix}shade-primary-5)'; @btn-ghost-bg; transparent);
     }
-    .active-btn-color(@primary-color);
+    .active-btn-color(~'var(--@{css-prefix}primary-color)');
 }
 
 // Color

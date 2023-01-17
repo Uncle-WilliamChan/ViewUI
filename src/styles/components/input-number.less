@@ -63,7 +63,7 @@
 
         &:hover &-up-inner,
         &:hover &-down-inner {
-            color: tint(@primary-color, 20%);
+            color: ~'var(--@{css-prefix}tint-primary-20)';
         }
     }
 
@@ -81,7 +81,7 @@
     }
 
     &:hover {
-        .hover();
+        border-color: ~'var(--@{css-prefix}tint-primary-20)';
     }
 
     &-focused {
@@ -210,7 +210,7 @@
                 font-size: 16px;
             }
             &:hover i{
-                color: @primary-color;
+                color: ~'var(--@{css-prefix}primary-color)';
             }
             &-disabled, &-disabled:hover{
                 cursor: @cursor-disabled;

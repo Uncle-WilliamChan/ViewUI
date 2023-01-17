@@ -143,7 +143,7 @@
 
             &-active{
                 background-color: @background-color-select-hover;
-                color: @primary-color;
+                color: ~'var(--@{css-prefix}primary-color)';
             }
         }
     }
@@ -162,7 +162,7 @@
                 transition: all @transition-time @ease-in-out;
                 &-active{
                     background-color: @background-color-select-hover;
-                    color: @primary-color;
+                    color: ~'var(--@{css-prefix}primary-color)';
                 }
             }
         }

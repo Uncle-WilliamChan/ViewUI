@@ -53,7 +53,7 @@
         background: @menu-dark-title;
     }
     &-primary{
-        background: @primary-color;
+        background: ~'var(--@{css-prefix}primary-color)';
     }
 
     &-item{
@@ -96,8 +96,8 @@
         border-bottom: 2px solid transparent;
         color: @text-color;
         &-active, &:hover{
-            color: @primary-color;
-            border-bottom: 2px solid @primary-color;
+            color: ~'var(--@{css-prefix}primary-color)';
+            border-bottom: 2px solid ~'var(--@{css-prefix}primary-color)';
         }
     }
 
@@ -155,7 +155,7 @@
 
         &:hover{
             //background: @background-color-select-hover;
-            color: @primary-color;
+            color: ~'var(--@{css-prefix}primary-color)';
         }
     }
 
@@ -186,7 +186,7 @@
         .@{menu-prefix-cls}-item{
             padding-left: 43px;
         }
-    } 
+    }
     &-vertical &-item-group{
         &-title{
             height: 48px;
@@ -204,9 +204,9 @@
     &-light&-vertical &-item{
         //border-right: 2px solid transparent;
         &-active:not(.@{menu-prefix-cls}-submenu){
-            color: @primary-color;
-            background: ~`colorPalette("@{primary-color}", 1)`;
-            //border-right: 2px solid @primary-color;
+            color: ~'var(--@{css-prefix}primary-color)';
+            background: ~'var(--@{css-prefix}primary-1)';
+            //border-right: 2px solid ~'var(--@{css-prefix}primary-color)';
             z-index: 2;
             &:after{
                 content: '';
@@ -216,7 +216,7 @@
                 top: 0;
                 bottom: 0;
                 right: 0;
-                background: @primary-color;
+                background: ~'var(--@{css-prefix}primary-color)';
             }
         }
     }
@@ -233,8 +233,8 @@
             background: @menu-dark-title;
         }
         &-active:not(.@{menu-prefix-cls}-submenu){
-            color: @primary-color;
-            //border-right: 2px solid @primary-color;
+            color: ~'var(--@{css-prefix}primary-color)';
+            //border-right: 2px solid ~'var(--@{css-prefix}primary-color)';
         }
     }
     &-dark&-vertical &-submenu &-item{
@@ -245,7 +245,7 @@
         &-active,&-active:hover{
             border-right: none;
             color: #fff;
-            background: @primary-color !important;
+            background: ~'var(--@{css-prefix}primary-color)' !important;
         }
     }
     // &-dark&-vertical &-item-active &-submenu-title{

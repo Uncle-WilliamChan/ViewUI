@@ -138,15 +138,15 @@
         color: #fff;
         border-color: #fff;
         &:hover{
-            color: tint(@primary-color, 20%);
-            border-color: tint(@primary-color, 20%);
+            color: ~'var(--@{css-prefix}tint-primary-20)';
+            border-color: ~'var(--@{css-prefix}tint-primary-20)';
         }
     }
     &-ghost&-primary{
-        color: @primary-color;
+        color: ~'var(--@{css-prefix}primary-color)';
         &:hover{
-            color: tint(@primary-color, 20%);
-            background: fade(tint(@primary-color, 95%), 50%);
+            color: ~'var(--@{css-prefix}tint-primary-20)';
+            background: fade(~'var(--@{css-prefix}tint-primary-95)', 50%);
         }
     }
     &-ghost&-info{
