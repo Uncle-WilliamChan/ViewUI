@@ -4,7 +4,7 @@
 @poptip-arrow-width: 7px;
 @poptip-arrow-outer-width: (@poptip-arrow-width + 1);
 @poptip-distance: @poptip-arrow-width - 1 + 4;
-//@poptip-arrow-color: fadein(@border-color-base, 5%);
+//@poptip-arrow-color: fadein(~'var(--@{css-prefix}border-color-base)', 5%);
 @poptip-arrow-color: hsla(0,0%,85%,.5);
 
 .@{poptip-prefix-cls} {
@@ -136,7 +136,7 @@
         padding: 16px 16px 8px;
         .ivu-icon{
             font-size: 16px;
-            color: @warning-color;
+            color: ~'var(--@{css-prefix}warning-color)';
             line-height: 18px;
             position: absolute;
         }

@@ -36,7 +36,7 @@ input::-ms-clear, input::-ms-reveal {
 }
 
 a {
-    color: @link-color;
+    color: ~'var(--@{css-prefix}link-color)';
     background: transparent;
     text-decoration: none;
     outline: none;
@@ -44,7 +44,7 @@ a {
     transition: color @transition-time ease;
 
     &:hover {
-        color: @link-hover-color;
+        color: ~'var(--@{css-prefix}link-hover-color)';
     }
 
     &:active {

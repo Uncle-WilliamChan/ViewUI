@@ -16,7 +16,7 @@
     height: @input-height-base;
     line-height: @input-height-base;
     vertical-align: middle;
-    border: 1px solid @border-color-base;
+    border: 1px solid ~'var(--@{css-prefix}border-color-base)';
     border-radius: @btn-border-radius;
     overflow: hidden;
     cursor: default;
@@ -24,7 +24,7 @@
     &-handler-wrap {
         width: 22px;
         height: 100%;
-        border-left: 1px solid @border-color-base;
+        border-left: 1px solid ~'var(--@{css-prefix}border-color-base)';
         border-radius: @radius-wrap;
         background: #fff;
         position: absolute;
@@ -46,7 +46,7 @@
     }
 
     &-handler-down {
-        border-top: 1px solid @border-color-base;
+        border-top: 1px solid ~'var(--@{css-prefix}border-color-base)';
         top: -1px;
         cursor: pointer;
     }
@@ -81,7 +81,7 @@
     }
 
     &:hover {
-        border-color: ~'var(--@{css-prefix}tint-primary-20)';
+        .hover();
     }
 
     &-focused {

@@ -73,7 +73,7 @@
     }
     &-success-bg{
         border-radius: 100px;
-        background-color: @success-color;
+        background-color: ~'var(--@{css-prefix}success-color)';
         transition: all @transition-time linear;
         position: absolute;
         top: 0;
@@ -86,7 +86,7 @@
         text-align: left;
         font-size: 1em;
         vertical-align: middle;
-        color: @subsidiary-color;
+        color: ~'var(--@{css-prefix}subsidiary-color)';
     }
 
     &-active {
@@ -113,19 +113,19 @@
 
     &-wrong {
         .@{progress-prefix-cls}-bg {
-            background-color: @error-color;
+            background-color: ~'var(--@{css-prefix}error-color)';
         }
         .@{progress-prefix-cls}-text {
-            color: @error-color;
+            color: ~'var(--@{css-prefix}error-color)';
         }
     }
 
     &-success {
         .@{progress-prefix-cls}-bg {
-            background-color: @success-color;
+            background-color: ~'var(--@{css-prefix}success-color)';
         }
         .@{progress-prefix-cls}-text {
-            color: @success-color;
+            color: ~'var(--@{css-prefix}success-color)';
         }
     }
 }

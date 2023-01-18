@@ -73,19 +73,19 @@
     }
 
     &-success {
-        .btn-color(@success-color);
+        .btn-color(~'var(--@{css-prefix}success-color)');
     }
 
     &-warning {
-        .btn-color(@warning-color);
+        .btn-color(~'var(--@{css-prefix}warning-color)');
     }
 
     &-error {
-        .btn-color(@error-color);
+        .btn-color(~'var(--@{css-prefix}error-color)');
     }
 
     &-info {
-        .btn-color(@info-color);
+        .btn-color(~'var(--@{css-prefix}info-color)');
     }
 
     &-circle,
@@ -139,7 +139,7 @@
         border-color: #fff;
         &:hover{
             color: ~'var(--@{css-prefix}tint-primary-20)';
-            border-color: ~'var(--@{css-prefix}tint-primary-20)';
+            .hover();
         }
     }
     &-ghost&-primary{
@@ -150,31 +150,31 @@
         }
     }
     &-ghost&-info{
-        color: @info-color;
+        color: ~'var(--@{css-prefix}info-color)';
         &:hover{
-            color: tint(@info-color, 20%);
-            background: fade(tint(@info-color, 95%), 50%);
+            color: tint(~'var(--@{css-prefix}info-color)', 20%);
+            background: fade(tint(~'var(--@{css-prefix}info-color)', 95%), 50%);
         }
     }
     &-ghost&-success{
-        color: @success-color;
+        color: ~'var(--@{css-prefix}success-color)';
         &:hover{
-            color: tint(@success-color, 20%);
-            background: fade(tint(@success-color, 95%), 50%);
+            color: tint(~'var(--@{css-prefix}success-color)', 20%);
+            background: fade(tint(~'var(--@{css-prefix}success-color)', 95%), 50%);
         }
     }
     &-ghost&-warning{
-        color: @warning-color;
+        color: ~'var(--@{css-prefix}warning-color)';
         &:hover{
-            color: tint(@warning-color, 20%);
-            background: fade(tint(@warning-color, 95%), 50%);
+            color: tint(~'var(--@{css-prefix}warning-color)', 20%);
+            background: fade(tint(~'var(--@{css-prefix}warning-color)', 95%), 50%);
         }
     }
     &-ghost&-error{
-        color: @error-color;
+        color: ~'var(--@{css-prefix}error-color)';
         &:hover{
-            color: tint(@error-color, 20%);
-            background: fade(tint(@error-color, 95%), 50%);
+            color: tint(~'var(--@{css-prefix}error-color)', 20%);
+            background: fade(tint(~'var(--@{css-prefix}error-color)', 95%), 50%);
         }
     }
 

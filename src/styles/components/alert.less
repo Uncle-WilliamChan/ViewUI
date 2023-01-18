@@ -31,10 +31,10 @@
 
     &-success {
         border: @border-width-base @border-style-base ~'var(--@{css-prefix}success-3)';
-        //background-color: tint(@success-color, 90%);
+        //background-color: tint(~'var(--@{css-prefix}success-color)', 90%);
         background-color: ~'var(--@{css-prefix}success-1)';
         .@{alert-prefix-cls}-icon {
-            color: @success-color;
+            color: ~'var(--@{css-prefix}success-color)';
         }
     }
 
@@ -49,19 +49,19 @@
 
     &-warning {
         border: @border-width-base @border-style-base ~'var(--@{css-prefix}warning-3)';
-        //background-color: tint(@warning-color, 90%);
+        //background-color: tint(~'var(--@{css-prefix}warning-color)', 90%);
         background-color: ~'var(--@{css-prefix}warning-1)';
         .@{alert-prefix-cls}-icon {
-            color: @warning-color;
+            color: ~'var(--@{css-prefix}warning-color)';
         }
     }
 
     &-error {
         border: @border-width-base @border-style-base ~'var(--@{css-prefix}error-3)';
-        //background-color: tint(@error-color, 90%);
+        //background-color: tint(~'var(--@{css-prefix}error-color)', 90%);
         background-color: ~'var(--@{css-prefix}error-1)';
         .@{alert-prefix-cls}-icon {
-            color: @error-color;
+            color: ~'var(--@{css-prefix}error-color)';
         }
     }
 

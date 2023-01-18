@@ -51,7 +51,7 @@
         left: 0;
         line-height: 1;
         padding-top: 6px;
-        color: @error-color;
+        color: ~'var(--@{css-prefix}error-color)';
     }
 
     &-required {
@@ -62,7 +62,7 @@
             line-height: 1;
             font-family: SimSun;
             font-size: @font-size-base;
-            color: @error-color;
+            color: ~'var(--@{css-prefix}error-color)';
         }
     }
     &-error {

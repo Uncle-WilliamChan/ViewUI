@@ -22,11 +22,11 @@
 
         background-color: #fff;
         border-radius: @btn-border-radius;
-        border: 1px solid @border-color-base;
+        border: 1px solid ~'var(--@{css-prefix}border-color-base)';
         transition: all @transition-time @ease-in-out;
 
         &:hover, &-focused {
-            border-color: ~'var(--@{css-prefix}tint-primary-20)';
+            .hover();
 
             .@{select-prefix-cls}-arrow {
                 display: inline-block;
@@ -58,7 +58,7 @@
             }
 
             &:hover {
-                border-color: @border-color-base;
+                border-color: ~'var(--@{css-prefix}border-color-base)';
                 box-shadow: none;
 
                 .@{select-prefix-cls}-arrow {
@@ -351,10 +351,10 @@
 .@{form-item-prefix-cls}-error{
     .@{select-prefix-cls}{
         &-selection{
-            border: 1px solid @error-color;
+            border: 1px solid ~'var(--@{css-prefix}error-color)';
         }
         &-arrow{
-            color: @error-color;
+            color: ~'var(--@{css-prefix}error-color)';
         }
         &-visible .@{select-prefix-cls}-selection{
             .active-error;

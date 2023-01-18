@@ -298,14 +298,14 @@
         padding: 8px;
         clear: both;
         & > span{
-            color: @link-color;
+            color: ~'var(--@{css-prefix}link-color)';
             cursor: pointer;
             user-select: none;
             float: left;
             padding: 2px 0;
             transition: all @transition-time @ease-in-out;
             &:hover{
-                color: @link-hover-color;
+                color: ~'var(--@{css-prefix}link-hover-color)';
             }
             &:active{
                 color: @link-active-color;

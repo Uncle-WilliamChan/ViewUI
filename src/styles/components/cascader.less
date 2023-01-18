@@ -77,7 +77,7 @@
 
     .select-item(@cascader-prefix-cls, @cascader-item-prefix-cls);
     .ivu-select-item span{
-        color: @error-color;
+        color: ~'var(--@{css-prefix}error-color)';
     }
 
     &-dropdown{
@@ -153,7 +153,7 @@
     .selectDropDown();
     .select-item(@cascader-prefix-cls, @cascader-item-prefix-cls);
     .ivu-select-item span{
-        color: @error-color;
+        color: ~'var(--@{css-prefix}error-color)';
     }
     .@{cascader-prefix-cls} {
         &-menu{
@@ -172,7 +172,7 @@
 .@{form-item-prefix-cls}-error{
     .@{cascader-prefix-cls} {
         &-arrow{
-            color: @error-color;
+            color: ~'var(--@{css-prefix}error-color)';
         }
     }
 }

@@ -17,7 +17,7 @@
         line-height: @input-height-base;
         font-size: 16px;
         text-align: center;
-        color: @subsidiary-color;
+        color: ~'var(--@{css-prefix}subsidiary-color)';
         position: absolute;
         right: 0;
         z-index: 3;
@@ -75,7 +75,7 @@
         i{
             font-size: 16px;
             line-height: @input-height-base;
-            color: @subsidiary-color;
+            color: ~'var(--@{css-prefix}subsidiary-color)';
         }
     }
     &-suffix{
@@ -160,7 +160,7 @@
     &-with-search{
         &:hover{
             .@{input-prefix-cls} {
-                border-color: ~'var(--@{css-prefix}tint-primary-20)';
+                .hover()
             }
         }
     }
@@ -176,7 +176,7 @@
         z-index: 1;
         display: inline-flex;
         align-items: center;
-        color: @subsidiary-color;
+        color: ~'var(--@{css-prefix}subsidiary-color)';
         font-size: @font-size-small;
     }
     &-wrapper-disabled &-word-count{
@@ -196,7 +196,7 @@
     .@{input-prefix-cls}{
         .input-error;
         &-icon{
-            color: @error-color;
+            color: ~'var(--@{css-prefix}error-color)';
         }
     }
     .@{input-prefix-cls}-group{
@@ -206,7 +206,7 @@
         .@{input-prefix-cls} {
             .input;
             &-icon{
-                color: @subsidiary-color;
+                color: ~'var(--@{css-prefix}subsidiary-color)';
             }
         }
     }
