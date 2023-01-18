@@ -29,7 +29,7 @@
     &-label{
         line-height: 1.2;
         font-size: @font-size-small;
-        color: ~'var(--@{css-prefix}subsidiary-color)';
+        color: @subsidiary-color;
     }
     &-selected &-label{
         color: inherit;
@@ -68,7 +68,7 @@
         outline: none;
     }
     &-selected:focus{
-        background: shade(@selected-color, 10%);
+        background: shade(~'var(--@{css-prefix}selected-color)', 10%);
     }
 }
 .select-item(@cell-prefix-cls, @cell-prefix-cls);

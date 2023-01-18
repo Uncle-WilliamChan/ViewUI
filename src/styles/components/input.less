@@ -17,7 +17,7 @@
         line-height: @input-height-base;
         font-size: 16px;
         text-align: center;
-        color: ~'var(--@{css-prefix}subsidiary-color)';
+        color: @subsidiary-color;
         position: absolute;
         right: 0;
         z-index: 3;
@@ -75,7 +75,7 @@
         i{
             font-size: 16px;
             line-height: @input-height-base;
-            color: ~'var(--@{css-prefix}subsidiary-color)';
+            color: @subsidiary-color;
         }
     }
     &-suffix{
@@ -176,7 +176,7 @@
         z-index: 1;
         display: inline-flex;
         align-items: center;
-        color: ~'var(--@{css-prefix}subsidiary-color)';
+        color: @subsidiary-color;
         font-size: @font-size-small;
     }
     &-wrapper-disabled &-word-count{
@@ -206,7 +206,7 @@
         .@{input-prefix-cls} {
             .input;
             &-icon{
-                color: ~'var(--@{css-prefix}subsidiary-color)';
+                color: @subsidiary-color;
             }
         }
     }

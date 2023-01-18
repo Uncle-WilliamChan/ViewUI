@@ -301,7 +301,7 @@
 .@{select-prefix-cls}-multiple .@{select-item-prefix-cls} {
     position: relative;
     &-selected{
-        color: @selected-color;
+        color: ~'var(--@{css-prefix}selected-color)';
         background: #fff;
     }
     &-focus,&-selected:hover{
@@ -309,7 +309,7 @@
     }
 
     &-selected&-focus {
-        color: shade(@selected-color, 10%);
+        color: shade(~'var(--@{css-prefix}selected-color)', 10%);
         background: #fff;
     }
 
@@ -318,7 +318,7 @@
         //float: right;
         font-size: 24px;
         content: '\F171';
-        color: @selected-color;
+        color: ~'var(--@{css-prefix}selected-color)';
         position: absolute;
         top: 2px;
         right: 8px;

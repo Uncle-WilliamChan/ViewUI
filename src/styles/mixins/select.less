@@ -32,11 +32,11 @@
 
         &-selected ,&-selected:hover{
             color: ~'var(--@{css-prefix}primary-color)';
-            //background: @selected-color;
+            //background: ~'var(--@{css-prefix}selected-color)';
         }
 
         &-selected&-focus {
-            //background: shade(@selected-color, 10%);
+            //background: shade(~'var(--@{css-prefix}selected-color)', 10%);
         }
 
         &-divided{
