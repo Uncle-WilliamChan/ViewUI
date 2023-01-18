@@ -64,16 +64,27 @@
     --@{css-prefix}error-8                : color(~`colorPalette("@{error-color}", 8)`);
     --@{css-prefix}error-9                : color(~`colorPalette("@{error-color}", 9)`);
 
-    --@{css-prefix}fade-primary-20        : fade(@primary-color, 20%);
+    --@{css-prefix}primary-fade-20        : fade(@primary-color, 20%);
+    --@{css-prefix}primary-shade-5        : shade(@primary-color, 5%);
+    --@{css-prefix}primary-tint-20        : tint(@primary-color, 20%);
+    --@{css-prefix}primary-tint-80        : tint(@primary-color, 80%);
+    --@{css-prefix}primary-tint-90        : tint(@primary-color, 90%);
+    --@{css-prefix}primary-tint-95        : tint(@primary-color, 95%);
+    --@{css-prefix}primary-tint-95-fade-50: fade(tint(@primary-color, 95%), 50%);
 
-    --@{css-prefix}shade-primary-5        : shade(@primary-color, 5%);
+    --@{css-prefix}success-tint-20        : tint(@success-color, 20%);
+    --@{css-prefix}success-tint-95-fade-50: fade(tint(@success-color, 95%), 50%);
 
-    --@{css-prefix}tint-primary-20        : tint(@primary-color, 20%);
-    --@{css-prefix}tint-primary-80        : tint(@primary-color, 80%);
-    --@{css-prefix}tint-primary-90        : tint(@primary-color, 90%);
-    --@{css-prefix}tint-primary-95        : tint(@primary-color, 95%);
+    --@{css-prefix}warning-tint-20        : tint(@warning-color, 20%);
+    --@{css-prefix}warning-tint-95-fade-50: fade(tint(@warning-color, 95%), 50%);
 
-    --@{css-prefix}tint-border-base-20    : tint(@border-color-base, 20%);
+    --@{css-prefix}error-tint-20          : tint(@error-color, 20%);
+    --@{css-prefix}error-tint-95-fade-50  : fade(tint(@error-color, 95%), 50%);
+
+    --@{css-prefix}info-tint-20           : tint(@info-color, 20%);
+    --@{css-prefix}info-tint-95-fade-50   : fade(tint(@info-color, 95%), 50%);
+
+    --@{css-prefix}border-base-tint-20    : tint(@border-color-base, 20%);
 }
 
 // Color
@@ -275,7 +286,7 @@
 @ease-in-out            : ease-in-out;
 
 // Slider
-@slider-color              : ~'var(--@{css-prefix}tint-primary-20)';
+@slider-color              : ~'var(--@{css-prefix}primary-tint-20)';
 @slider-height             : 4px;
 @slider-margin             : 16px 0;
 @slider-button-wrap-size   : 18px;

@@ -3,7 +3,7 @@
 .@{collapse-prefix-cls}{
     background-color: @background-color-base;
     border-radius: 3px;
-    border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+    border: 1px solid @border-color-base;
 
     &-simple{
         border-left: none;
@@ -13,7 +13,7 @@
     }
 
     & > &-item{
-        border-top: 1px solid ~'var(--@{css-prefix}border-color-base)';
+        border-top: 1px solid @border-color-base;
         &:first-child {
             border-top: 0;
         }
@@ -35,7 +35,7 @@
         }
     }
     &  > &-item&-item-active > &-header{
-        border-bottom: 1px solid ~'var(--@{css-prefix}border-color-base)';
+        border-bottom: 1px solid @border-color-base;
     }
     &-simple > &-item&-item-active > &-header{
         border-bottom: 1px solid transparent;

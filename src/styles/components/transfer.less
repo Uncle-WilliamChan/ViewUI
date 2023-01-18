@@ -22,7 +22,7 @@
             padding: 8px 16px;
             background: @head-bg;
             color: @text-color;
-            border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+            border: 1px solid @border-color-base;
             border-bottom: 1px solid @border-color-split;
             border-radius: @border-radius-base @border-radius-base 0 0;
             overflow: hidden;
@@ -47,7 +47,7 @@
 
         &-body{
             height: 100%;
-            border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+            border: 1px solid @border-color-base;
             border-top: none;
             border-radius: 0 0 @border-radius-base @border-radius-base;
             position: relative;
@@ -102,7 +102,7 @@
         }
 
         &-footer{
-            border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+            border: 1px solid @border-color-base;
             border-top: none;
             border-radius: 0 0 @border-radius-base @border-radius-base;
             position: absolute;

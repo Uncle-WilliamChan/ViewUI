@@ -2,7 +2,7 @@
     @checkbox-inner-prefix-cls: ~"@{checkbox-prefix-cls}-inner";
 
     .@{checkbox-prefix-cls}-focus {
-        box-shadow: 0 0 0 2px ~'var(--@{css-prefix}fade-primary-20)';
+        box-shadow: 0 0 0 2px ~'var(--@{css-prefix}primary-fade-20)';
         z-index: 1;
     }
 
@@ -33,7 +33,7 @@
             position: relative;
             top: 0;
             left: 0;
-            border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+            border: 1px solid @border-color-base;
             border-radius: 2px;
             background-color: #fff;
             transition: border-color @transition-time @ease-in-out, background-color @transition-time @ease-in-out, box-shadow @transition-time @ease-in-out;
@@ -92,7 +92,7 @@
             }
         }
         &-border{
-            border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+            border: 1px solid @border-color-base;
             border-radius: @btn-border-radius;
             height: @btn-height-base;
             line-height: @btn-height-base - 2px;
@@ -173,13 +173,13 @@
         &.@{checkbox-prefix-cls}-checked {
             &:hover {
                 .@{checkbox-inner-prefix-cls} {
-                    border-color: ~'var(--@{css-prefix}border-color-base)';
+                    border-color: @border-color-base;
                 }
             }
 
             .@{checkbox-inner-prefix-cls} {
                 background-color: #f3f3f3;
-                border-color: ~'var(--@{css-prefix}border-color-base)';
+                border-color: @border-color-base;
 
                 &:after {
                     animation-name: none;
@@ -190,12 +190,12 @@
 
         &:hover {
             .@{checkbox-inner-prefix-cls} {
-                border-color: ~'var(--@{css-prefix}border-color-base)';
+                border-color: @border-color-base;
             }
         }
 
         .@{checkbox-inner-prefix-cls} {
-            border-color: ~'var(--@{css-prefix}border-color-base)';
+            border-color: @border-color-base;
             background-color: #f3f3f3;
             &:after {
                 animation-name: none;
@@ -237,7 +237,7 @@
         &.@{checkbox-prefix-cls}-disabled{
             .@{checkbox-inner-prefix-cls}{
                 background-color: #f3f3f3;
-                border-color: ~'var(--@{css-prefix}border-color-base)';
+                border-color: @border-color-base;
             }
             .@{checkbox-inner-prefix-cls}:after{
                 border-color: @input-placeholder-color;

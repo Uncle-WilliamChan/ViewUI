@@ -1,14 +1,14 @@
 .hover(@color: primary) {
-    border-color: ~'var(--@{css-prefix}tint-@{color}-20)';
+    border-color: ~'var(--@{css-prefix}@{color}-tint-20)';
 }
 .hover-error() {
     border-color: ~'var(--@{css-prefix}error-color)';
 }
 
 .active(@color: primary) {
-    border-color: ~'var(--@{css-prefix}tint-@{color}-20)';
+    border-color: ~'var(--@{css-prefix}@{color}-tint-20)';
     outline: 0;
-    box-shadow: 0 0 0 2px ~'var(--@{css-prefix}fade-@{color}-20)';
+    box-shadow: 0 0 0 2px ~'var(--@{css-prefix}@{color}-fade-20)';
 }
 .active-error() {
     border-color: ~'var(--@{css-prefix}error-color)';

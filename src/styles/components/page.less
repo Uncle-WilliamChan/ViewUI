@@ -25,7 +25,7 @@
         cursor: pointer;
         font-family: Arial;
         font-weight: 500;
-        border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+        border: 1px solid @border-color-base;
         border-radius: @btn-border-radius;
         //transition: all @transition-time @ease-in-out;
         transition: border @transition-time @ease-in-out, color @transition-time @ease-in-out;
@@ -60,15 +60,15 @@
             color: #ccc;
         }
         &:hover {
-            border-color: ~'var(--@{css-prefix}border-color-base)';
+            border-color: @border-color-base;
             a {
                 color: #ccc;
                 cursor: @cursor-disabled;
             }
         }
         &-active {
-            background-color: ~'var(--@{css-prefix}border-color-base)';
-            border-color: ~'var(--@{css-prefix}border-color-base)';
+            background-color: @border-color-base;
+            border-color: @border-color-base;
 
             a, &:hover a {
                 color: #fff;
@@ -162,7 +162,7 @@
         cursor: pointer;
         color: #666;
         font-family: Arial;
-        border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+        border: 1px solid @border-color-base;
         border-radius: @btn-border-radius;
         transition: all @transition-time @ease-in-out;
     }
@@ -195,7 +195,7 @@
             color: #ccc;
         }
         &:hover {
-            border-color: ~'var(--@{css-prefix}border-color-base)';
+            border-color: @border-color-base;
             a {
                 color: #ccc;
                 cursor: @cursor-disabled;
@@ -263,7 +263,7 @@
             box-sizing: border-box;
             background-color: #fff;
             outline: none;
-            border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+            border: 1px solid @border-color-base;
             border-radius: @btn-border-radius;
             transition: border-color @transition-time @ease-in-out;
 

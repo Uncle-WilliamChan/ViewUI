@@ -22,7 +22,7 @@
 
         background-color: #fff;
         border-radius: @btn-border-radius;
-        border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+        border: 1px solid @border-color-base;
         transition: all @transition-time @ease-in-out;
 
         &:hover, &-focused {
@@ -58,7 +58,7 @@
             }
 
             &:hover {
-                border-color: ~'var(--@{css-prefix}border-color-base)';
+                border-color: @border-color-base;
                 box-shadow: none;
 
                 .@{select-prefix-cls}-arrow {

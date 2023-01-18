@@ -4,12 +4,12 @@
 .@{table-prefix-cls} {
     &-wrapper{
         position: relative;
-        //border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+        //border: 1px solid @border-color-base;
         //border-bottom: 0;
         //border-right: 0;
         overflow: hidden; // 开启 max-height 时，没有 overflow: hidden，则底部多出 1px，早期没有 overflow 是因为有些控件没有加 transfer
         &-with-border{
-            border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+            border: 1px solid @border-color-base;
             border-bottom: 0;
             border-right: 0;
         }
@@ -60,7 +60,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        background-color: ~'var(--@{css-prefix}border-color-base)';
+        background-color: @border-color-base;
         //z-index: 1;
         z-index: 4; // 解决开启 border，同时固定表头和列，fixed 的最底下没有边框
     }
@@ -72,7 +72,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-color: ~'var(--@{css-prefix}border-color-base)';
+        background-color: @border-color-base;
         z-index: 3;
     }
 
@@ -81,7 +81,7 @@
     }
 
     &-with-footer{
-        //border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+        //border: 1px solid @border-color-base;
         //border-radius: 0 0 @border-radius-base @border-radius-base;
     }
 
@@ -138,7 +138,7 @@
 
     &-with-fixed-top&-with-footer{
         .@{table-prefix-cls}-footer{
-            border-top: 1px solid ~'var(--@{css-prefix}border-color-base)';
+            border-top: 1px solid @border-color-base;
         }
         tbody tr:last-child td{
             border-bottom: none;
@@ -252,7 +252,7 @@
             display: inline-block;
             width: 16px;
             height: 16px;
-            border: 1px solid ~'var(--@{css-prefix}border-color-base)';
+            border: 1px solid @border-color-base;
             border-radius: 2px;
             background-color: #fff;
             line-height: 12px;
@@ -394,7 +394,7 @@
             content: '';
             width: 100%;
             height: 1px;
-            background-color: ~'var(--@{css-prefix}border-color-base)';
+            background-color: @border-color-base;
             position: absolute;
             left: 0;
             bottom: 0;
@@ -417,7 +417,7 @@
         top: -1px;
         right: 0;
         background-color: @table-thead-bg;
-        border-top: 1px solid ~'var(--@{css-prefix}border-color-base)';
+        border-top: 1px solid @border-color-base;
         border-bottom: 1px solid @border-color-split;
     }
     &-fixed-header{
